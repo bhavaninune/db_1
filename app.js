@@ -16,5 +16,5 @@ const tableRoutes = require('../routes/table');
 app.use(tableRoutes);
 
 app.listen(port, () => {
-  console.log(Server is running on port ${port});
+  console.log(Server is running on port 3000);
 });
