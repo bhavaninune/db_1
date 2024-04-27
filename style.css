@@ -1,90 +1,68 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
 
-.container {
-    padding: 20px;
-}
-
-.tableData {
-    margin-bottom: 10px;
+  header {
+    background: #000000;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+  }
+  .container {
+    margin: auto;
+    width: 500px;
+    overflow: auto;
+    padding: 3rem 2rem;
+  }
+  #my-form {
+    padding: 2rem;
+    /* background: #f4f4f4; */
+  }
+  
+  #my-form label {
+    display: block;
+  }
+  
+  #my-form input[type='text'] {
+    width: 100%;
     padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.addData {
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.addData:hover {
-    background-color: #0056b3;
-}
-
-#createTable {
-    position: absolute;
-    left: 2%;
-    right: 2%;
-    bottom: 20px;
-    padding: 10px 20px;
-    background-color: #28a745;
+  }
+  
+  .bg-dark {
+    background: #333;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#createTable:hover {
-    background-color: #218838;
-}
-
-#firstHalf {
-    position: relative;
-    width: 30%;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
-
-#secondHalf {
-    width: 70%;
-}
-
-.modal-header {
-    background-color: #007bff;
+  }
+  
+  .error {
+    background: orangered;
     color: #fff;
-    border-bottom: none;
-}
+    padding: 5px;
+    margin: 5px;
+  }
 
-.modal-body {
-    padding: 20px;
-}
-
-.modal-footer {
-    border-top: none;
-}
-
-.form-label {
-    color: #495057;
-}
-
-.form-outline input,
-.form-outline select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-}
-
-.form-outline input:focus,
-.form-outline select:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    /* text-align: center; */
+    padding: 5px;
+    /* background: #f4f4f4; */
+    margin: 5px 0;
+  }
+  
+  .Extra-Style{
+    margin-left: 10px;
+  }
+  
+  

@@ -1,20 +1,17 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const path = require('path');
+const Cors = require('cors');
 
-const app = express();
-const port = 3000;
+const  app = express();
+const router = require('./Routes/formPage');
+const sequelize = require('./Models/User');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname)));
+app.use(Cors());
+app.use(express.json()); // use to send data as an object and get 
 
-app.use(cors());
+app.use('/',router);
 
-const tableRoutes = require('../routes/table');
-app.use(tableRoutes);
+sequelize.sync().then( () => {
+    app.listen(4000);
+}).catch(err => console.log(err));
 
-app.listen(port, () => {
-  console.log(Server is running on port 3000);
-});
+// console.log('WEOLCOME TO BOOKING MANAGEMENT APP BACKEND CODE');
